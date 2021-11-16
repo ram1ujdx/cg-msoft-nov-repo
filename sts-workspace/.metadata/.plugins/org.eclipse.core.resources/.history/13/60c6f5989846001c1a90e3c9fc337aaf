@@ -1,0 +1,32 @@
+package looping;
+
+import java.util.Scanner;
+
+public class AverageFinder {
+
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in); 
+		
+		float avg = 0;
+		float sum = 0;
+		int num;
+		
+		int counter=0;
+		
+		while(counter<5) {
+			num = scan.nextInt();
+			sum = sum + num;
+			counter++;
+		}
+		
+		avg=sum/5;
+		
+		System.out.println("Average = "+avg);
+		
+		
+		
+
+	}
+
+}
