@@ -5,7 +5,86 @@ public class Trainee {
 	private int traineeId;
 	private String traineeName;
 	private String email;
+	private String joiningMonth;
 	
+	
+	public Trainee() {
+		
+	}
+
+	
+
+	
+	
+
+
+	
+
+
+
+
+
+
+
+
+	public Trainee(int traineeId, String traineeName, String email, String joiningMonth) {
+		super();
+		this.traineeId = traineeId;
+		this.traineeName = traineeName;
+		this.email = email;
+		this.joiningMonth = joiningMonth;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public String getJoiningMonth() {
+		return joiningMonth;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public void setJoiningMonth(String joiningMonth) {
+		this.joiningMonth = joiningMonth;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public int getTraineeId() {
 		return traineeId;
 	}
