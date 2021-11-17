@@ -107,6 +107,27 @@ public class Trainee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "Trainee [traineeId=" + traineeId + ", traineeName=" + traineeName + ", email=" + email
+				+ ", joiningMonth=" + joiningMonth + "]";
+	}
 	
 	
 	
