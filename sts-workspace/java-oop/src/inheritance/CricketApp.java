@@ -13,11 +13,11 @@ public class CricketApp {
 		
 		System.out.println("-----------------------");
 		
-		Player player2 = new Bowler("V Kumar",30,"India",500, 5.23, 49.3);
-		player2.play();
-		player2.displayPlayerDetails();
+		player1 = new Bowler("V Kumar",30,"India",500, 5.23, 49.3);
+		player1.play();
+		player1.displayPlayerDetails();
 		
-
+		
 
 	}
 

@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Player {
+public abstract class Player {
 
 	protected String name;
 	protected int age;
@@ -24,9 +24,7 @@ public class Player {
 		System.out.println("The ball is caught...");
 	}
 	
-	public void play() {
-		System.out.println("Playing..");
-	}
+	public abstract void play();
 	
 	
 	public void inputPlayerDetails(String name, int age, String team) {
