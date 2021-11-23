@@ -37,10 +37,21 @@ public class ListOfTrainees {
 			System.out.println(trainee);
 		}
 		
-		CompareByName byName=new CompareByName();
-		Collections.sort(traineeList,byName);
+//		CompareByName byName=new CompareByName();
+//		Collections.sort(traineeList,byName);
+//		
+//		System.out.println("After Sorting By Name - ");
+//		
+//		for(Trainee trainee:traineeList) {
+//			System.out.println(trainee);
+//		}
 		
-		System.out.println("After Sorting By Name - ");
+		
+//		Comparator<Trainee> byEmail=(tr1,tr2)->tr1.getEmail().compareTo(tr2.getEmail());
+		
+		Collections.sort(traineeList,(tr1,tr2)->tr1.getEmail().compareTo(tr2.getEmail()));
+		
+		System.out.println("After Sorting By Email - ");
 		
 		for(Trainee trainee:traineeList) {
 			System.out.println(trainee);
