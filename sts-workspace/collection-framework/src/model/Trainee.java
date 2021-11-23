@@ -69,6 +69,53 @@ public class Trainee implements Comparable<Trainee> {
 	public int compareTo(Trainee trainee) {
 		return this.traineeId-trainee.traineeId;
 	}
+
+
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + ((joiningMonth == null) ? 0 : joiningMonth.hashCode());
+		result = prime * result + traineeId;
+		result = prime * result + ((traineeName == null) ? 0 : traineeName.hashCode());
+		return result;
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Trainee other = (Trainee) obj;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
+		if (joiningMonth == null) {
+			if (other.joiningMonth != null)
+				return false;
+		} else if (!joiningMonth.equals(other.joiningMonth))
+			return false;
+		if (traineeId != other.traineeId)
+			return false;
+		if (traineeName == null) {
+			if (other.traineeName != null)
+				return false;
+		} else if (!traineeName.equals(other.traineeName))
+			return false;
+		return true;
+	}
 	
+	// POJO - Plain Old Java Object
+	
+	// Model Class
 	
 }
