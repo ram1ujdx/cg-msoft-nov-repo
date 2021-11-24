@@ -1,5 +1,7 @@
 package streamapi;
 
+import java.time.LocalDate;
+
 public class Employee {
 
 	private int employeeId;
@@ -7,19 +9,40 @@ public class Employee {
 	private String lastName;
 	private String email;
 	private float salary;
+	private LocalDate hiredaDate;
+	
+	
 	
 	public Employee() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employee(int employeeId, String firstName, String lastName, String email, float salary) {
+	
+
+	public Employee(int employeeId, String firstName, String lastName, String email, float salary,
+			LocalDate hiredaDate) {
 		super();
 		this.employeeId = employeeId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.salary = salary;
+		this.hiredaDate = hiredaDate;
 	}
+
+
+
+	public LocalDate getHiredaDate() {
+		return hiredaDate;
+	}
+
+
+
+	public void setHiredaDate(LocalDate hiredaDate) {
+		this.hiredaDate = hiredaDate;
+	}
+
+
 
 	public int getEmployeeId() {
 		return employeeId;
@@ -104,12 +127,15 @@ public class Employee {
 		return true;
 	}
 
+
+
 	@Override
 	public String toString() {
 		return "Employee [employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
-				+ email + ", salary=" + salary + "]";
+				+ email + ", salary=" + salary + ", hiredaDate=" + hiredaDate + "]";
 	}
-	
+
+
 	
 	
 	
