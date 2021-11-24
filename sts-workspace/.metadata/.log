@@ -2733,3 +2733,142 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-23 15:45:17.241
 !MESSAGE executing callback sts4.classpath.XrhxgueS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-23 18:24:01.760
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XrhxgueS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-23 18:24:01.762
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.XrhxgueS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-23 18:24:01.762
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-23 18:24:01.762
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XrhxgueS => OK
+!SESSION 2021-11-24 09:46:41.047 -----------------------------------------------
+eclipse.buildId=4.10.0.202103111225
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/ramanujdas/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/ramanujdas/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2021-11-24 09:46:59.187
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-11-24 09:46:59.187
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@589d831e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1bd6638,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2021-11-24 09:48:47.162
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:55.553
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:55.556
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@bd990b[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=548)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:55.560
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:55.647
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.014
+!MESSAGE Boot LS startup time from start to initialized: 2414ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.313
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VFmuLuDfisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.316
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.317
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.318
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.318
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VFmuLuDf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.319
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.324
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.325
+!MESSAGE buffering callback sts4.classpath.VFmuLuDf java-8 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.326
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.327
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.328
+!MESSAGE buffering callback sts4.classpath.VFmuLuDf collection-framework false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.329
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.330
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.330
+!MESSAGE buffering callback sts4.classpath.VFmuLuDf java-basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.330
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.331
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.331
+!MESSAGE buffering callback sts4.classpath.VFmuLuDf java-oop false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.331
+!MESSAGE executing callback sts4.classpath.VFmuLuDf 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-24 09:50:58.772
+!MESSAGE executing callback sts4.classpath.VFmuLuDf SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-11-24 10:03:41.788
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-11-24 10:26:54.307
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
