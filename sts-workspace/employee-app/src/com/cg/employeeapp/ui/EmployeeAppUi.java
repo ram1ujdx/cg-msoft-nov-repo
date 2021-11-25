@@ -50,5 +50,13 @@ public class EmployeeAppUi {
 		
 		
 	}
+	
+	public void searchEmployee() {
+		
+	}
+	
+	public void deleteEmployee() {
+		
+	}
 
 }
