@@ -17,6 +17,8 @@ public interface EmployeeDao {
 	
 	public List<Employee> getAllEmployees();
 	
+	public Employee getEmployeeByEmail(String email);
 	
+	public List<Employee> getEmployeesJonedInYear(int year);
 	
 }

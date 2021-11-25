@@ -67,6 +67,18 @@ public class EmployeeDaoImplementation implements EmployeeDao {
 		
 	}
 	
+	@Override
+	public Employee getEmployeeByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	@Override
+	public List<Employee> getEmployeesJonedInYear(int year) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 
 }
