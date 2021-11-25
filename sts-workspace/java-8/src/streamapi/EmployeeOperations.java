@@ -43,17 +43,42 @@ public class EmployeeOperations {
 
 //		Exercise 8
 		
-		employeeList.stream().map(e->{
-			float salary=e.getSalary();
-			salary=salary + (salary/100)*15;
-			
-			System.out.println(e.getFirstName()+"\t"+e.getSalary()+"\t"+salary);
-			e.setSalary(salary);
-			return e;
-			})
-			.forEach(e->System.out.println());
+//		employeeList.stream().map(e->{
+//			float salary=e.getSalary();
+//			salary=salary + (salary/100)*15;
+//			
+//			System.out.println(e.getFirstName()+"\t"+e.getSalary()+"\t"+salary);
+//			e.setSalary(salary);
+//			return e;
+//			})
+//			.forEach(e->System.out.println());
+		
+		// Count employees whose salary>40000
 		
 		
+//		int count = (int)employeeList.stream().filter(e->e.getSalary()>40000).count();
+//		
+//		System.out.println(count);
+		
+		
+		// Joined before 2010 (2010-12-31) in desc order
+		
+//		LocalDate date = LocalDate.of(2010, 12, 31);
+//		
+//		employeeList.stream().filter(e->e.getHiredaDate().isBefore(date)).forEach(e->System.out.println(e));
+		
+//		Comparator<Employee> sortByHireDateDesc = (e1,e2)->e2.getHiredaDate().compareTo(e1.getHiredaDate());
+//		
+//		employeeList.stream().filter(e->e.getHiredaDate().getYear()<=2010)
+//							.sorted(sortByHireDateDesc)
+//							.forEach(e->System.out.println(e));
+		
+		
+		
+//		Method Reference
+		
+		
+//		employeeList.forEach(System.out::println);
 		
 		
 	}

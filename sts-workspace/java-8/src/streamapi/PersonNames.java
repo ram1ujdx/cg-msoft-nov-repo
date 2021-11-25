@@ -18,7 +18,7 @@ public class PersonNames {
 		
 		// Convert the names to upper cases
 		
-		Stream<String> namesUpperCase = namesWithR.map(name->name.toUpperCase());
+		Stream<String> namesUpperCase = namesWithR.map(String::toUpperCase);
 		
 		// Collect to a List
 		
@@ -26,7 +26,7 @@ public class PersonNames {
 		
 		// Display Names
 		
-		outputList.forEach(name->System.out.println(name));
+		outputList.forEach(System.out::println);
 		
 
 	}
