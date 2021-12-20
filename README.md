@@ -87,3 +87,121 @@ docker run -p 5000:5000 --network=cg-mysql-network -e RDS_HOSTNAME=mysql -e RDS_
 ```
 
 __All env variables are mentioned in the application.properties file of the spring boot application__
+
+## Docker Voilume to persist data
+
+* Step 1 - Create a docker volume
+
+```bash
+
+docker volume create cg-data-volume
+
+```
+
+* Step 2 -
+Attaching volume to mysql
+
+```
+
+docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=cg_db --volume=cg-data-volume:/var/lib/mysql  --network cg-mysql-network --name mysql -d mysql
+
+
+```
+
+## Using Docker Compose to run multi-container application
+
+* Step 1 - create docker-compose.yml file
+
+
+```yml
+
+version: '3.7'
+services:
+  mysql:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: cg_db
+    # volumes:
+    #   - mysql-db-volume:/var/lib/mysql
+    networks:
+      - employee-app-network
+
+
+  employee-app:
+    image: employee-app
+    #build:
+      #context: .
+      #dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    restart: always
+    depends_on: # Start the depends_on first
+      - mysql 
+    environment:
+      RDS_HOSTNAME: mysql
+      RDS_PORT: 3306
+      RDS_DB_NAME: cg_db
+      RDS_USERNAME: root
+      RDS_PASSWORD: password
+    networks:
+      - employee-app-network
+
+
+networks:
+  employee-app-network:
+
+  ```
+
+
+* Step 2 - Install Docker-compose
+
+__Installing Docker-compose on EC2:__
+
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+```
+
+* Step 3 - Commands to strat and stop the containers -
+
+```bash
+
+docker-compose up
+
+```
+
+
+### Important Docker Compose Commands
+
+* Docker-compose Configuration
+
+```bash
+docker-compose config
+```
+
+* Docker-Compose Images Used
+
+```bash
+docker-compose images
+```
+
+
+* Docker-Compose Pause, Resume, Stop, Kill 
+
+```bash
+docker-compose pause
+docker-compose unpause
+docker-compose stop
+docker-compose kill
+
+```
