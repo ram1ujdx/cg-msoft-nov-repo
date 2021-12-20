@@ -5,8 +5,8 @@
 * Step 1 - Pull the Image
 * Step 2 - Run the image as a container
 
---Example--
-- Running the covid-info image
+__Example__
+Running the covid-info image
 
 ```bash
 
